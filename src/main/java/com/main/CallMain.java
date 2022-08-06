@@ -49,7 +49,7 @@ public class CallMain {
 
                 String amountOfCallsValue = args[1].substring("amountOfCalls=".length());
                 if (!isPositiveNumber(amountOfCallsValue)) {
-                    errorMsg = "'amountOfCalls' should be positive numeric value and not zerov";
+                    errorMsg = "'amountOfCalls' should be positive numeric value and not zero";
                     throw new Exception();
                 }
                 amountOfCalls = Integer.parseInt(amountOfCallsValue);
