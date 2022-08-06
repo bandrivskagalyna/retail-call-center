@@ -11,8 +11,8 @@ public class Employee implements Runnable {
     private BlockingQueue<Call> callQueue;
 
 
-    public Employee(long id, Role role ) {
-        this.id=id;
+    public Employee(long id, Role role) {
+        this.id = id;
         this.role = role;
         this.callQueue = new ArrayBlockingQueue<>(50);
     }

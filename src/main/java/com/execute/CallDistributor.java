@@ -14,11 +14,11 @@ public class CallDistributor implements Runnable {
     private ExecutorService executorService;
     private boolean active;
     private List<Employee> employees;
-    public  BlockingQueue<Call> incomingCallsQueue;
+    public BlockingQueue<Call> incomingCallsQueue;
 
-    public CallDistributor(List<Employee> employees,  BlockingQueue<Call> incomingCallsQueue ) {
+    public CallDistributor(List<Employee> employees, BlockingQueue<Call> incomingCallsQueue) {
         this.employees = employees;
-        this.incomingCallsQueue=incomingCallsQueue;
+        this.incomingCallsQueue = incomingCallsQueue;
         this.executorService = Executors.newFixedThreadPool(20);
     }
 
