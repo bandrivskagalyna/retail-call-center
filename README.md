@@ -17,7 +17,7 @@ mvn clean install
 
 ## How to start
 
-Using Maven (you can skip parameter and they will be set to default predefined values: staffAmount=3 amountOfCalls=9 callDuration=3)
+Using Maven (you can skip parameters and they will be set to default predefined values: staffAmount=3 amountOfCalls=9 callDuration=3)
 ```bash
 mvn compile exec:java -Dexec.mainClass="com.main.CallMain" -Dexec.args="staffAmount=4 amountOfCalls=15 callDuration=2"mvn clean install
 ```
@@ -29,5 +29,5 @@ staffAmount=4 amountOfCalls=15 callDuration=2
 ## Note
 
 Maximum number of employees is 50 and  maximum number of calls is 100. 
-All provided perameters should be positive non-zero values
+All provided parameters should be positive non-zero values
 
